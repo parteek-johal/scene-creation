@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>Scene Creation</title>
+		<style>
+			body { margin: 0; }
+			canvas { width: 100%; height: 100% }
+		</style>
+	</head>
+	<body>
+
+    <p style=" position: fixed; padding: 5px;"; ><img src="images/mouse_controls.png">
+    </p>
+
+
+<script src="js/three.min.js"></script>
+<script src="js/OBJLoader.js"></script>
+<script src="js/OrbitControls.js"></script>
+<script type="x-shader/x-vertex" id="vertexShader">
+      // GLSL vertex shader
+    varying vec4 v_Normal;
+    varying vec4 v_ViewPosition;
+
+    void main() {
+       gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0);
+       vec4 normal4 = vec4(normal,0);
+       v_Normal = modelViewMatrix*normal4;
+       v_ViewPosition = modelViewMatrix*vec4(position,1.0);
+  }
+</script>
+<script type="x-shader/x-fragment" id="myPhong">
+     // GLSL fragment shader
+  uniform vec3 lightColor;        // light: diffuse + specular
+  uniform vec3 ambientColor;      // light: ambient
+  uniform vec3 lightPosition;     // light position
+  uniform vec3 ka;                // ambient reflectance
+  uniform vec3 kd;                // diffuse reflectance
+  uniform vec3 ks;                // specular reflectance
+  uniform float nSpec;            // shininess
+  varying vec4 v_Normal;          // vertex normal, in VCS
+  varying vec4 v_ViewPosition;    // vertex position, in VCS
+
+  void main() {
+
+      
+
+    gl_FragColor = vec4(0.5,0,0,1);
+}
+</script>
+<script src="js/loadOBJ.js"></script>
+<script src="a4.js"></script>
+</body>
+</html>
