@@ -12,8 +12,8 @@ Used orbit controls to navigate (pan/zoom/rotate).
 This scene is live [HERE](https://www.ugrad.cs.ubc.ca/~x8m8/scene-creation-master/a4.html).
 
 
-####Screenshots
-![My image](parteek-johal/scene-creation/images/webgl_thumb.png)
+####Screenshot
+![ScreenShot](parteek-johal.github.com/scene-creation/images/webgl_thumb.png)
 
 ####Useful Links
 
