@@ -13,8 +13,7 @@ This scene is live [HERE](https://www.ugrad.cs.ubc.ca/~x8m8/scene-creation-maste
 
 
 ####Screenshot
-![ScreenShot](parteek-johal.github.com/scene-creation/images/webgl_thumb.png)
-
+<img src="https://raw.githubusercontent.com/parteek-johal/scene-creation/master/images/webgl_thumb.png" width="500">
 ####Useful Links
 
 
